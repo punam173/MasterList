@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"edu.pdx.cs410J.punam","l":"PhoneBill"},{"p":"edu.pdx.cs410J.punam","l":"PhoneCall"},{"p":"edu.pdx.cs410J.punam","l":"Project1"},{"p":"edu.pdx.cs410J.punam","l":"Validate"}]

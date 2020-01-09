@@ -1,0 +1,7 @@
+Hello suman! You currently have 4 calls logged on your bill.
+Here's a list of all your calls:
+    Caller               Callee                 StartDateTime                EndDateTime         Duration(min) 
+  123-123-1234         345-456-5678           1/3/18, 11:00 AM            1/3/18, 1:00 PM           120        
+  123-123-1234         345-456-5678           1/4/18, 10:00 AM            1/4/18, 11:30 AM           90        
+  123-123-1234         345-456-5678           12/8/18, 8:00 AM            12/8/18, 8:15 AM           15        
+  123-123-1234         345-456-5678           12/8/18, 8:00 AM            12/8/18, 8:15 AM           15        
