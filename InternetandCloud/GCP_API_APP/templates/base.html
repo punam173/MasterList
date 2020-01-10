@@ -1,0 +1,39 @@
+<!--This base contains the header part of our page and gets extended to every other HTML pages --!>
+<!--It conatins the nav menu--!>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multimedia Recognition and Translation</title>	  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+  	<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#">Multimedia analyzer</a>
+    		</div>
+    
+    		<ul class="nav navbar-nav navbar-right">
+			<li> <a href="{{ url_for('homepage') }}" id="a">
+				<span class="glyphicon glyphicon-home"></span>
+			       	Home
+			     </a>
+			</li>
+      <!-- <li><a href="#" id="a"><span class="glyphicon glyphicon-tasks"></span> Services</a></li> -->
+    		</ul>
+  	</div>
+    </nav>
+
+    <div class="container">
+      {% block content %}{% endblock %} 
+    </div>
+  </body> 
+</html>
+
+

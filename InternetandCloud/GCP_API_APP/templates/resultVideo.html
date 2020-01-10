@@ -1,0 +1,32 @@
+<!--This page displays the results of the selceted vedio--!>
+{% extends "base.html" %}
+{% block content %}
+  <h1>Results:</h1>
+  <div class="flex-container">
+    <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Uploaded Video(mp4 file)</h4>
+	 <video width="200" height="200" controls>
+    		<source src="{{source_uri}}" type="video/mp4"> 
+    	</video>
+    </div>
+    <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Cloud Video Intelligence Analysis</h4>
+	{%for i in range (0,3)%}
+	<h4 style="padding-top:7px">{{labels[i].entity.description}}</h4>
+	{%endfor%}
+   </div>
+   <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Cloud Translate API Analysis</h4>
+	{%for i in range (0,3)%}
+	<h4 style="padding-top: 7px">{{result[i].translatedText}}</h4>
+	{%endfor%}
+   </div>   
+   <div id="s" style="flex:2">
+   	<h4 style="font-weight: bold">Confidence Score</h4>
+	{%for i in range (0,3)%}
+	<h4 style="padding-top: 7px">{{confidence[i]}}</h4>
+	{%endfor%}
+   </div>   
+																			        
+  </div>  
+{% endblock %}

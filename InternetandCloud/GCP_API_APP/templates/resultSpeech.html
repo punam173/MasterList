@@ -1,0 +1,32 @@
+<!--This page displays the result for the selected speech--!>
+{% extends "base.html" %}
+{% block content %}
+  <h1>Results:</h1>
+  <div class="flex-container">
+    <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Uploaded Audio</h4>
+	<audio controls>
+	    <source src="{{source_uri}}" type="audio/wav">
+    	</audio>	
+    </div>
+    <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Cloud Speech-To-Text API Analysis</h4>
+	{%for i in range (1)%}
+	<h4 style="padding-top:7px">{{labels[i]}}</h4>
+	{%endfor%}
+   </div>
+   <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Cloud Translate API Analysis</h4>
+	{%for i in range (1)%}
+	<h4 style="padding-top: 7px">{{result[i].translatedText}}</h4>
+	{%endfor%}
+   </div>   
+    <div id="s" style="flex:2">
+	<h4 style="font-weight: bold">Cloud Natural Language API (Sentimental) Analysis</h4>
+	{%for i in range (1)%}
+	<h4 style="padding-top: 7px">{{scores[i]}}</h4>
+	{%endfor%}
+   </div>
+																			        
+  </div>  
+{% endblock %}

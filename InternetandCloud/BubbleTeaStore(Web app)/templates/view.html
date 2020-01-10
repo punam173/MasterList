@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h3>Bubble Tea Store Location</h3>
+    {% for entry in entries %}
+        <p class=entry>
+            Name: {{ entry.name }}<br> Street_address: {{entry.street_address}}<br>City: {{entry.city}} State: {{entry.state}} Zip_code: {{entry.zip_code}}<br>Store_Hours: {{entry.store_hours}}<br>Phone: {{entry.phone_number}}<br>Rating: {{entry.rating}}<br>Review:  {{entry.review}}<br>Drink_to_order:  {{entry.drink_to_order}}
+            <br>
+
+
+        </p>
+    {% endfor %}
+
+{% endblock %}
+

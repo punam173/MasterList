@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Add Bubble Tea Store Location Inflormation</h2>
+    <form action="{{ url_for('info') }}" method=post>
+        <p class="heading">Name: <input type=text name=name>
+        <p class="heading">Address: <input type=text name=street_address>
+        <p class="heading">City: <input type=text name=city>
+        <p class="heading">State: <input type=text name=state>
+        <p class="heading">Zip Code: <input type=text name=zip_code>
+        <p class="heading">Store_hours: <input type=text name=store_hours>
+        <p class="heading">Phone Number: <input type=text name=phone_number>
+        <p class="heading">rating: <input type=text name=rating>
+        <p class="heading">Review:
+        <textarea rows=5 cols=50 name=review></textarea></p>
+        <p class="heading">Drinks Menu: <input type=text name=drink_to_order>
+        <p><input type=submit value=Sign></p>
+
+    </form>
+{% endblock %}
+~              
