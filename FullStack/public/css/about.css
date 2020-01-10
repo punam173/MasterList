@@ -1,0 +1,33 @@
+
+/*--------------------------------------------------------------
+# About section styling 
+--------------------------------------------------------------*/
+#about {
+  background: url("../img/about.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 150px 0 200px 0;
+  /* position: relative; */
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+#about .container {
+  position: relative;
+  z-index: 10;
+}
+
+#bmi {
+  background: url("../img/pic5.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 150px 0 200px 0;
+  /* position: relative; */
+}
+
